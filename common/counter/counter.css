@@ -1,0 +1,9 @@
+/* 左上角：打开次数 */
+#counter {
+	font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* 设置字体 */
+	font-size: 16px;
+	/* 设置字号 */
+	color: #464a4d;
+	/* 设置字体颜色 */
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ㅤ</title>
+		<link rel="stylesheet" href="common/CachedInputBox/CachedInputBox.css">
+		<link rel="stylesheet" href="common/counter/counter.css">
+		<link rel="stylesheet" href="common/calculator/calculator.css">
+		<link rel="stylesheet" href="common/main.css">
+		<link rel="stylesheet" href="common/background/background.css">
+	</head>
+	<body >
+		<div id="背景" style="position: absolute;width: 100%;height: 100%;">
+			<div class="landscape"></div>
+			<div class="filter"></div>
+			<canvas id="canvas"></canvas>
+		</div>
+		<div id="main">
+			<div class="left">
+				<div id="counter">Loading...</div>
+			</div>
+			<div class="right">
+				<textarea id="calcInput" cols="30" rows="1" ondblclick="this.select()"
+					onkeydown="return cxx.checkKey(event);" onkeyup="cxx.calc.autoCalculate();"></textarea><br>
+				<textarea id="calcOutput" cols="30" rows="1" readonly></textarea>
+			</div>
+			<div class="center">
+				<div class="up">
+					<input id="searchInput" placeholder="" autofocus="autofocus"
+						onkeypress="if(event.keyCode == 13) defaultSearch()" />
+				</div>
+				<div class="middle" id="buttons">
+					<!-- 带_需翻墙 -->
+					<div class="a">
+						<br><button>音乐_酷狗</button>
+						<br><button>音乐_酷我</button>
+						<br><button>音乐_网易云</button>
+						<br><button>音乐_5sing</button>
+						<br><button>歌词网</button>
+						<br><button>酷歌词</button>
+						<br><button>搜狗</button>
+						<br><button>搜狗_微信文章</button>
+					</div>					
+					<div class="a">
+						<br><button>知乎</button>
+						<br><button>下厨房</button>
+						<br><button>哔哩哔哩</button>
+						<br><button>Bing</button>
+						<br><button>MBA智库百科</button>
+						<br><button>天眼查</button>
+						<br><button>企查查</button>
+						<br><button>爱企查</button>
+					</div>
+					<div class="a">
+						<br><button>百度贴吧</button>
+						<br><button>淘宝</button>
+						<br><button>京东</button>
+						<br><button>Github</button>
+						<br><button>LeetCode</button>
+						<br><button>吾爱破解</button>
+						<br><button>掘金</button>
+						<br><button>菜鸟教程</button>
+					</div>
+					<div class="a">
+						<br><button>豆瓣</button>
+						<br><button>有道翻译</button>
+						<br><button>古诗文网</button>
+						<br><button>人人都是产品经理</button>
+						<br><button>程序员工具箱</button>
+						<br><button>BOSS直聘</button>
+						<br><button>智联招聘</button>
+						<br><button>Maven仓库</button>
+					</div>
+					<div class="a">
+						<br><button>_Google</button>
+						<br><button>_维基百科</button>
+						<br><button>_YouTube</button>
+						<br><button>_YouTube_Music</button>
+						<br><button>_Spotify</button>
+						<br><button>_V2EX</button>
+						<br><button>_Chrome插件</button>
+						<br><button>GreasyFork</button>
+					</div>					
+				</div>
+				<div class="down">
+					<textarea id="CachedInputBox"></textarea>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="common/CachedInputBox/CachedInputBox.js"></script>
+<script src="common/counter/counter.js"></script>
+<script src="common/calculator/calculator1.js"></script>
+<script src="common/calculator/calculator2.js"></script>
+<script>
+	cxx.preInit();
+	cxx.init();
+</script>
+<script src="common/main.js"></script>
+<script src="common/background/background.js"></script>

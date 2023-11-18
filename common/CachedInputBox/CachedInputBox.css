@@ -1,0 +1,26 @@
+/* 输入框 */
+#CachedInputBox {
+	border: none;
+	border-radius: 5px;
+	/* 设置圆角半径 */
+	width: 100%;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0);
+	/* 设置背景色透明度 */
+	resize: none;
+	outline: none;
+	/* 取消外边框线 */
+	font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* 设置字体 */
+	font-size: 16px;
+	/* 设置字号 */
+	line-height: 1.6;
+	/* 设置行高 */
+	padding: 10px;
+	/* 设置内边距 */
+	color: #9ba5a5;
+	/* 设置字体颜色 */
+	transition: all 0.3s ease-in-out;
+	/* 设置过渡效果 */
+	height: 180px;
+}
