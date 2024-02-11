@@ -39,7 +39,7 @@ input {
 	border: 1px dotted #3f3f00;
 	color: #ffffff;
 	font-size: 16px;
-	border-radius: 12px;
+	border-radius: 7px;
 }
 
 input::-webkit-input-placeholder {
@@ -58,16 +58,19 @@ input:focus {
 }
 
 button {
-	color: #64875a;
-	/* padding: 10px 20px; */
-	border: 1px dotted #3f3f00;
-	border-radius: 5px;
+	/* font-family: "幼圆"; */
+	/* font-weight: bold; */
 	font-size: 12px;
+	color: #64875a;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
-	transition: background-color 0.3s ease;
 	width: 8.5rem;
 	height: 2.2rem;
+	transition: background-color 0.3s ease;
 	background-color: transparent;
+	border: none;
+	border-radius: 5px;
+	/* padding: 10px 20px; */
 	/* 使用自定义图案和默认样式 */
 	/* cursor: url('鼠标链接指针.png'), auto; */
 }
